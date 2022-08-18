@@ -1,0 +1,40 @@
+.container-fluid a {
+    color: lightblue;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.container-main {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: justify;
+    min-height: 90vh;
+}
+
+.page-footer {
+    position: static;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+}
+
+.page-footer a {
+    text-decoration: none;
+    color: lightblue;
+    font-weight: bolder;
+}
+
+.card-body a i {
+    font-size: 70px;
+    margin: auto;
+    padding: 10px;
+}
+
+.card-body i {
+    font-size: 70px;
+    margin: auto;
+    padding: 10px;
+    color: #008000
+}

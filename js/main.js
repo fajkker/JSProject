@@ -2,7 +2,7 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
 
-$('#returnBtn').click(function() {    
+$('#returnBtn').click(function() {
     location.href="index.html";
 });
 

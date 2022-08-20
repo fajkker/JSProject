@@ -9,31 +9,33 @@ function lanzardados() {
         duration: 700,
         step: function (now) {
             var scale = (1 * now / 360);
-            $('#ImgDado1').css({
+            $('#ImgNum1').css({
                 transform: 'rotate(' + now + 'deg) scale(' + scale + ')'
             });
-            $('#ImgDado2').css({
+            $('#ImgNum2').css({
                 transform: 'rotate(' + now + 'deg) scale(' + scale + ')'
             });
-            $('#ImgDado3').css({
+            $('#ImgNum3').css({
                 transform: 'rotate(' + now + 'deg) scale(' + scale + ')'
             });
-            $('#ImgDado4').css({
+            $('#ImgNum4').css({
                 transform: 'rotate(' + now + 'deg) scale(' + scale + ')'
             });
         }
     }); 
 
 
-    document.getElementById("ImgDado1").src="img/dungeon/"+dado1+".svg";
-    document.getElementById("ImgDado2").src="img/dungeon/"+dado2+".svg";
-    document.getElementById("ImgDado3").src="img/dungeon/"+dado3+".svg";
-    document.getElementById("ImgDado4").src="img/dungeon/"+dado4+".svg";    
+    document.getElementById("ImgNum1").src="img/dungeon/"+dado1+".svg";
+    document.getElementById("ImgNum2").src="img/dungeon/"+dado2+".svg";
+    document.getElementById("ImgNum3").src="img/dungeon/"+dado3+".svg";
+    document.getElementById("ImgNum4").src="img/dungeon/"+dado4+".svg";    
     document.getElementById("SumaDados").innerHTML = suma;
 
-    if(suma>= 30) {
-        alert("Felicitaciones ganaste con una puntuacion de " + suma)
+    if(suma>= 22) {
+        alert("Felicitaciones ganaste con una puntuacion de " + suma + " puntos!")    
     }
+
+
     
     //$('#ImgDado1').attr("src", "../img/dados/"+dado1+".svg");
     //$('#SumaDados').html(suma);

@@ -9,6 +9,7 @@
 .container-main {
     padding-top: 100px;
     padding-bottom: 60px;
+    margin-bottom: -50px;
     text-align: justify;
     min-height: 90vh;
 }
@@ -37,4 +38,10 @@
     margin: auto;
     padding: 10px;
     color: #008000
+}
+
+.dado {
+    padding: 10%;
+    margin: 10%;
+    border-radius: 20%;
 }

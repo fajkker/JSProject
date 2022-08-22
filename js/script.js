@@ -34,10 +34,5 @@ function lanzardados() {
     if(suma>= 22) {
         alert("Felicitaciones ganaste con una puntuacion de " + suma + " puntos!")    
     }
-
-
-    
-    //$('#ImgDado1').attr("src", "../img/dados/"+dado1+".svg");
-    //$('#SumaDados').html(suma);
     
 }

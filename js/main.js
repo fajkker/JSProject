@@ -9,3 +9,7 @@ $('#returnBtn').click(function() {
 function getNumRand(min, max) {       
     return Math.round(Math.random()*(max-min)+parseInt(min));
 }
+
+var clase = ["Mago", "Guerrero", "Bardo", "Paladin"];
+
+document.getElementById("titulo").innerHTML = "Tienes " + clase.length + " clases para elegir";

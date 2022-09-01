@@ -16,4 +16,4 @@ function getNumRand(min, max) {
 
 var clase = ["Mago", "Guerrero", "Bardo", "Paladin"];
 clase.push("Arquero")
-document.getElementById("clase").innerHTML = "Tienes " + clase.length + " clases para elegir";
+document.getElementById("titulo").innerHTML = "Tienes " + clase.length + " clases para elegir"+ ": " + clase.map((el) => el);

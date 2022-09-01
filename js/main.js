@@ -10,10 +10,49 @@ $('#classBtn').click(function() {
     location.href="class.html";
 });
 
+$('#mage').click(function() {
+    location.href="#";
+});
+
+$('#warrior').click(function() {
+    location.href="#";
+});
+
+$('#paladin').click(function() {
+    location.href="#";
+});
+
+$('#bardo').click(function() {
+    location.href="#";
+});
+
+$('#arquero').click(function() {
+    location.href="#";
+});
+
 function getNumRand(min, max) {       
     return Math.round(Math.random()*(max-min)+parseInt(min));
 }
 
-var clase = ["Mago", "Guerrero", "Bardo", "Paladin"];
+var clase = ["Guerrero", "Paladin", "Bardo"];
+clase.unshift("Mago")
 clase.push("Arquero")
-document.getElementById("clase").innerHTML = "Tienes " + clase.length + " clases para elegir";
+document.getElementById("clase").innerHTML = "Tienes " + clase.length + " clases para elegir" + ": " + clase.map((el) => el);
+
+var clase = [
+    {nombre: 'Guerrero', arma: 'maza'},
+    {nombre: 'Bardo', arma: 'musica'},
+    {nombre: 'Paladin', arma: 'espada'},
+    {nombre: 'Mago', arma: 'magia'},
+    {nombre: 'Arquero', arma: 'arco'},
+]
+
+clase.forEach( (clase) => {
+    console.log(clase)
+})
+
+var nombres = clase.map((el => el.nombre))
+console.log(nombres)
+
+var armas = clase.map((el => el.arma))
+console.log(armas)

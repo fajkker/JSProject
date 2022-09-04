@@ -1,8 +1,8 @@
 function lanzardados() {
-    let numero1 =  getNumRand(1, 9);
-    let numero2 =  getNumRand(1, 9);
-    let numero3 =  getNumRand(1, 9);
-    let numero4 =  getNumRand(1, 9);
+    let numero1 = getNumRand(1, 9);
+    let numero2 = getNumRand(1, 9);
+    let numero3 = getNumRand(1, 9);
+    let numero4 = getNumRand(1, 9);
     let suma = numero1 + numero2 + numero3 + numero4;
 
     $({ deg: 0 }).animate({ deg: 360 }, {
@@ -22,20 +22,37 @@ function lanzardados() {
                 transform: 'rotate(' + now + 'deg) scale(' + scale + ')'
             });
         }
-    }); 
+    });
 
 
-    document.getElementById("ImgNum1").src="img/dungeon/"+numero1+".svg";
-    document.getElementById("ImgNum2").src="img/dungeon/"+numero2+".svg";
-    document.getElementById("ImgNum3").src="img/dungeon/"+numero3+".svg";
-    document.getElementById("ImgNum4").src="img/dungeon/"+numero4+".svg";    
+    document.getElementById("ImgNum1").src = "img/dungeon/" + numero1 + ".svg";
+    document.getElementById("ImgNum2").src = "img/dungeon/" + numero2 + ".svg";
+    document.getElementById("ImgNum3").src = "img/dungeon/" + numero3 + ".svg";
+    document.getElementById("ImgNum4").src = "img/dungeon/" + numero4 + ".svg";
     document.getElementById("SumaDados").innerHTML = suma;
 
+    //function azar() {
+    //    document.getElementById("azar").innerHTML = suma;
+    //}
+    $('#int').click(function () {
+        console.log("Has sumado " + suma + " en Inteligencia")
+        document.getElementById("int").innerHTML = suma;
+    });
 
+    $('#str').click(function () {
+        console.log("Has sumado " + suma + " en Fuerza")
+        document.getElementById("str").innerHTML = suma;
+        return
+    });
 
-    if(suma >= 22) {
-        alert("Felicitaciones ganaste con una puntuacion de " + suma + " puntos!")   
-    }
-    
+    $('#const').click(function () {
+        console.log("Has sumado " + suma + " en Constitucion")
+        document.getElementById("const").innerHTML = suma;
+    });
+
+    $('#sab').click(function () {
+        console.log("Has sumado " + suma + " en Sabiduria")
+        document.getElementById("sab").innerHTML = suma;
+    });
 }
 

@@ -45,22 +45,6 @@
     margin: 150%;
 }
 
-#mage {
-    display: none;
-}
-
-#warrior {
-    display: none;
-}
-
-#paladin {
-    display: none;
-}
-
-#bardo {
-    display: none;
-}
-
-#arquero {
+#mage, #warrior, #paladin, #bardo, #arquero {
     display: none;
 }

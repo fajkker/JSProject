@@ -10,6 +10,9 @@ $('#classBtn').click(function() {
     location.href="class.html";
 });
 
+function getNumRand(min, max) {       
+    return Math.round(Math.random()*(max-min)+parseInt(min));
+}
 
 function mostrarM(input) {
     var mage=document.getElementById("mage")
@@ -82,13 +85,10 @@ function mostrarA(input) {
     //     document.getElementById("arquero").style.display = 'block';
 };
 
-function getNumRand(min, max) {       
-    return Math.round(Math.random()*(max-min)+parseInt(min));
-}
 
-var clase = ["Guerrero", "Paladin", "Bardo"];
+var clase = [" Guerrero", " Paladin", " Bardo"];
 clase.unshift("Mago")
-clase.push("Arquero")
+clase.push(" Arquero")
 document.getElementById("clase").innerHTML = "Tienes " + clase.length + " clases para elegir" + ": " + clase.map((el) => el);
 
 var clase = [
@@ -110,6 +110,12 @@ var armas = clase.map((el => el.arma))
 console.log(armas)
 
 //function mostrar() {
-//    document.getElementById("mage").style.display = 'block';
 //    alert("Magos usan " + clase(nombre("Mago")).arma)
 //};
+
+
+
+//for (let i = 0; i < 3; i++) {
+//    const newPerson = document.createElement("div");
+//    document.querySelector("")
+// }

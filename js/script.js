@@ -34,15 +34,16 @@ function lanzardados() {
     //function azar() {
     //    document.getElementById("azar").innerHTML = suma;
     //}
+    
     $('#int').click(function () {
-        console.log("Has sumado " + suma + " en Inteligencia")
+        const int = suma;
+        console.log("Has sumado " + int + " en Inteligencia")
         document.getElementById("int").innerHTML = suma;
     });
 
     $('#str').click(function () {
         console.log("Has sumado " + suma + " en Fuerza")
         document.getElementById("str").innerHTML = suma;
-        return
     });
 
     $('#const').click(function () {
@@ -56,3 +57,4 @@ function lanzardados() {
     });
 }
 
+export$('#sab')

@@ -2,10 +2,12 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
 
+// BOTON REGRESAR
 $('#returnBtn').click(function() {
     location.href="index.html";
 });
 
+// BOTON CLASES
 $('#classBtn').click(function() {
     location.href="class.html";
 });
@@ -13,6 +15,9 @@ $('#classBtn').click(function() {
 function getNumRand(min, max) {       
     return Math.round(Math.random()*(max-min)+parseInt(min));
 }
+
+// IMPORTO SCRIPT.JS
+
 
 function mostrarM(input) {
     var mage=document.getElementById("mage")
@@ -119,3 +124,6 @@ console.log(armas)
 //    const newPerson = document.createElement("div");
 //    document.querySelector("")
 // }
+
+
+document.getElementById("agregar").innerHTML = suma;

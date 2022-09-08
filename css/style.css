@@ -48,3 +48,8 @@
 #mage, #warrior, #paladin, #bardo, #arquero {
     display: none;
 }
+
+h3 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

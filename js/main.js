@@ -9,9 +9,9 @@ $('#returnBtn').click(function() {
 
 
 // BOTON REGRESAR DUNGEON
-//$('#returnBtn').click(function() {
-//    location.href="dungeon.html";
-//});
+$('#returnBtn2').click(function() {
+    location.href="dungeon.html";
+});
 
 // BOTON CLASES
 $('#classBtn').click(function() {
@@ -48,11 +48,12 @@ function mostrarW(input) {
     if(input.value=="Warrior") {
         warrior.style.display = "block";
         input.value="Ocultar"
+        console.log("Elegiste Warrior")
     } else {
         warrior.style.display = "none"
         input.value="Warrior"
     }
-
+    
     //function warrior() {
     //    document.getElementById("warrior").style.display = 'block';
 };
@@ -76,7 +77,6 @@ function mostrarP(input) {
 
 
 // TRAIGO BARDO
-
 function mostrarB(input) {
     var bardo=document.getElementById("bardo")
     if(input.value=="Bardo") {
@@ -142,5 +142,4 @@ console.log(armas)
 //    document.querySelector("")
 // }
 
-
-document.getElementById("agregar").innerHTML = suma;
+// document.getElementById("agregar").innerHTML = suma;

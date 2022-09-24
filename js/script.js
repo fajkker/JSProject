@@ -8,7 +8,7 @@ function lanzardados() {
     $({ deg: 0 }).animate({ deg: 360 }, {
         duration: 700,
         step: function (now) {
-            var scale = (1 * now / 360);
+            var scale = (0.7 * now / 360);
             $('#ImgNum1').css({
                 transform: 'rotate(' + now + 'deg) scale(' + scale + ')'
             });
@@ -29,30 +29,41 @@ function lanzardados() {
     document.getElementById("ImgNum2").src = "img/dungeon/" + numero2 + ".svg";
     document.getElementById("ImgNum3").src = "img/dungeon/" + numero3 + ".svg";
     document.getElementById("ImgNum4").src = "img/dungeon/" + numero4 + ".svg";
-    document.getElementById("SumaDados").innerHTML = suma;
-
-    //function azar() {
-    //    document.getElementById("azar").innerHTML = suma;
-    //}
+    document.getElementById("SumaNumeros").innerHTML = suma;
     
     $('#int').click(function () {
-        const int = suma;
-        console.log("Has sumado " + int + " en Inteligencia")
+        swal({
+            title: "Inteligencia",
+            text: "Sumaste " + suma + " puntos a Inteligencia",
+            icon: "success",
+          });
         document.getElementById("int").innerHTML = suma;
     });
 
     $('#str').click(function () {
-        console.log("Has sumado " + suma + " en Fuerza")
+        swal({
+            title: "Fuerza",
+            text: "Sumaste " + suma + " puntos a Fuerza",
+            icon: "success",
+          });
         document.getElementById("str").innerHTML = suma;
     });
 
     $('#const').click(function () {
-        console.log("Has sumado " + suma + " en Constitucion")
+        swal({
+            title: "Constitucion",
+            text: "Sumaste " + suma + " puntos a Constitucion",
+            icon: "success",
+          });
         document.getElementById("const").innerHTML = suma;
     });
 
     $('#sab').click(function () {
-        console.log("Has sumado " + suma + " en Sabiduria")
+        swal({
+            title: "Sabiduria",
+            text: "Sumaste " + suma + " puntos a Sabiduria",
+            icon: "success",
+          });
         document.getElementById("sab").innerHTML = suma;
     });
 }
